@@ -1,8 +1,8 @@
 __all__ = ['matrix', 'bmat', 'mat', 'asmatrix']
 
-import sys
-import warnings
 import ast
+import sys
+
 import numpy.core.numeric as N
 from numpy.core.numeric import concatenate, isscalar
 from numpy.core.overrides import set_module
