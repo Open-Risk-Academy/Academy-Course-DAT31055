@@ -1,6 +1,9 @@
 import numpy as np
 from numpy.testing import assert_, assert_equal, assert_array_equal
 
+import numpymatrix as npm
+
+
 class TestView:
     def test_type(self):
         x = np.array([1, 2, 3])

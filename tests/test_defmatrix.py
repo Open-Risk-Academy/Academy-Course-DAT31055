@@ -1,14 +1,15 @@
 import collections.abc
 
 import numpy as np
+from numpy.linalg import matrix_power
 from numpy.testing import (
     assert_, assert_equal, assert_almost_equal, assert_array_equal,
     assert_array_almost_equal, assert_raises
 )
-from numpy.linalg import matrix_power
+
 import numpymatrix as npm
-from numpymatrix import matrix, asmatrix, bmat
 from numpymatrix import mat
+from numpymatrix import matrix, asmatrix, bmat
 
 
 class TestCtor:

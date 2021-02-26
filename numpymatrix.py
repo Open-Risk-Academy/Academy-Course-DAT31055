@@ -4,7 +4,13 @@ import ast
 import sys
 
 import numpy.core.numeric as N
-from numpy.core.numeric import concatenate, isscalar
+
+"""
+Note 2/26/21: improper import concatenate
+"""
+# from numpy.core.numeric import concatenate, isscalar
+from numpy.core.numeric import isscalar
+from numpy.core.multiarray import concatenate
 from numpy.core.overrides import set_module
 # While not in __all__, matrix_power used to be defined here, so we import
 # it for backward compatibility.

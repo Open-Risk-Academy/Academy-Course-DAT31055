@@ -1,6 +1,8 @@
 import numpy as np
 from numpy.testing import assert_, assert_equal, assert_raises
 
+import numpymatrix as npm
+
 
 class TestRegression:
     def test_kron_matrix(self):
