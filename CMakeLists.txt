@@ -4,7 +4,7 @@ add_definitions(-std=c++11)
 
 # set the ARMA and EIGEN paths and libs
 set(ARMA_PREFIX "/usr")
-set(ARMA_LIB_DIR "${ARMA_PREFIX}/lib//x86_64-linux-gnu/")
+set(ARMA_LIB_DIR "${ARMA_PREFIX}/lib/x86_64-linux-gnu/")
 set(ARMA_LIBS "${ARMA_LIB_DIR}/libarmadillo.so")
 
 include_directories(.)

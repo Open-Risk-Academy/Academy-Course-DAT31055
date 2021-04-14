@@ -48,11 +48,11 @@ TODO
 | Save to file / stream                     | .save()                    |             |              |
 
 ## Notes
+
 * We do not specify explicitly the set of array classes for each method. E.g. obviously setting all elements to one does
-not apply to the sparse matrix class (where it exists)
+  not apply to the sparse matrix class (where it exists)
 * Refer to the documentation for subtle differences between functions that appear to have similar functionality!
 * Member functions have some functionality overlap with [functions applied to single arrays](Functions.md)
-
 
 ## Iterators
 

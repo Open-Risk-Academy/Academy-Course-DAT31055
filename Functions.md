@@ -68,7 +68,6 @@ TODO
 | flatten matrix into vector              | vectorise(A)               |             |              |
 | element-wise functions (various)        | exp(A), sin(A), ...        |             |              |
 
-
 ## Bivariate Functions
 
 | Bivariate Functions of Arrays           | armadillo 9.600                | eigen 3.3.7 | numpy 1.16.4 |
@@ -83,6 +82,7 @@ TODO
 | infimum and supremum                    |                                |             |              |
 
 ## Notes
+
 * Only one form is shown (B=F(A) in preference to F(B, A))
 * Additional functional arguments generally not shown (Consult the libraries documentation!)
 * The enumeration does not include functions indicated as deprecated

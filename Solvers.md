@@ -1,7 +1,5 @@
 # Comparison of algorithms for matrix decomposition, eigenvalues and linear solvers
 
-
-
 ## Decompositions (Dense Matrices)
 
 | Feature subset            | armadillo 9.600              | eigen 3.3.7                       | numpy 1.16.4 |
@@ -19,14 +17,12 @@
 | Jacobi SVD                |                              |                                   |              |
 | Eigen Decomposition       | eig_sym( eigval, eigvec, X ) |                                   |              |
 
-
 ## Eigenvalues and Principal Components (Dense Matrices)
 
 | Feature subset           | armadillo 9.600 | eigen 3.3.7 | numpy 1.16.4 |
 | ------------------------ | --------------- | ----------- | ------------ |
 | Eigen values and vectors |                 |             |              |
 | Principal Components     | princomp        |             |              |
-
 
 ## Matrix Inversion and Solvers (Dense Matrices)
 

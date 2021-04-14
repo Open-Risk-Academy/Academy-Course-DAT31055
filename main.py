@@ -29,5 +29,5 @@ print(A * A)
 print(B * B)
 
 # ** power is NOT OK
-print(A**2)
-print(B**2)
+print(A ** 2)
+print(B ** 2)
