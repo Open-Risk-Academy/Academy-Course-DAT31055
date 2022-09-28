@@ -7,9 +7,7 @@ set(CMAKE_BUILD_TYPE Debug)
 message(${CMAKE_SOURCE_DIR})
 message(${CMAKE_BINARY_DIR})
 
-set(conan_config_requires   "armadillo/10.7.0")
-set(conan_config_options    "armadillo:use_hdf5=False")
-
+# Install via conan
 if(EXISTS ${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
     include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
     conan_basic_setup()
@@ -17,20 +15,19 @@ else()
     message(WARNING "The file conanbuildinfo.cmake doesn't exist, you have to run conan install first")
 endif()
 
+# set the ARMA and EIGEN paths and libs
+find_package(Armadillo 10.7 REQUIRED NO_MODULE)
+find_package (Eigen3 3.3 REQUIRED NO_MODULE)
 
-find_package(HDF5 REQUIRED)
-find_package (Eigen3 3.3 REQUIRED)
-find_package(Armadillo CONFIG REQUIRED)
-
-include_directories(${HDF5_INCLUDE_DIRS})
-include_directories(${EIGEN_INCLUDE_DIRS})
+include_directories(.)
 include_directories(${ARMADILLO_INCLUDE_DIRS})
+include_directories(${EIGEN_INCLUDE_DIRS})
 
-set(TARGET2_SOURCES src/eigen.cpp)
 set(TARGET1_SOURCES src/arma.cpp)
-
-add_executable(eigen ${TARGET2_SOURCES})
-target_link_libraries (eigen Eigen3::Eigen)
+set(TARGET2_SOURCES src/eigen.cpp)
 
 add_executable(arma ${TARGET1_SOURCES})
 target_link_libraries(arma armadillo)
+
+add_executable(eigen ${TARGET2_SOURCES})
+target_link_libraries (eigen Eigen3::Eigen)

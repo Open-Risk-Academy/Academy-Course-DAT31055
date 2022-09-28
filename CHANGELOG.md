@@ -1,5 +1,5 @@
 # 0.0.3
-* update todo list with latest version targets
+* update todo list with the latest version targets
 * comparison tables and c++ files from deprecated rustyRosetta project
 
 # 0.0.2 

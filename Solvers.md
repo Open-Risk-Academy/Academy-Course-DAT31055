@@ -3,7 +3,7 @@
 ## Decompositions (Dense Matrices)
 
 | Feature subset            | armadillo 9.600              | eigen 3.3.7                       | numpy 1.16.4 |
-| ------------------------- | ---------------------------- | --------------------------------- | ------------ |
+|---------------------------|------------------------------|-----------------------------------|--------------|
 | LU with Partial Pivot     | lu( L, U, P, X )             | partialPivLu()                    |              |
 | LU with Full Pivot        | lu( L, U, X )                | fullPivLu()                       |              |
 | Hessenberg                | hess( H, X )                 |                                   |              |
@@ -20,14 +20,14 @@
 ## Eigenvalues and Principal Components (Dense Matrices)
 
 | Feature subset           | armadillo 9.600 | eigen 3.3.7 | numpy 1.16.4 |
-| ------------------------ | --------------- | ----------- | ------------ |
+|--------------------------|-----------------|-------------|--------------|
 | Eigen values and vectors |                 |             |              |
 | Principal Components     | princomp        |             |              |
 
 ## Matrix Inversion and Solvers (Dense Matrices)
 
 | Feature subset                              | armadillo 9.600 | eigen 3.3.7 | numpy 1.16.4             |
-| ------------------------------------------- | --------------- | ----------- | ------------------------ |
+|---------------------------------------------|-----------------|-------------|--------------------------|
 | linear matrix equation                      |                 |             | linalg.solve(a, b)       |
 | tensor equation a x = b for x               |                 |             | linalg.tensorsolve(a, b) |
 | least-squares solution to a matrix equation |                 |             | linalg.lstsq(a, b)       |

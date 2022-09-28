@@ -4,7 +4,7 @@
 ## Fundamental n-dim array classes
 
 | Feature subset            | armadillo 9.600 | eigen 3.3.7         | numpy 1.16.4      |
-| ------------------------- | --------------- | ------------------- | ----------------- |
+|---------------------------|-----------------|---------------------|-------------------|
 | dense column vector class | Col<type>       | VectorNd            | numpy.array()     |
 | dense row vector class    | Row<type>       | MatrixXd            | numpy.array()     |
 | dense matrix class        | Mat<type>       | MatrixXd            | numpy.matrix()(1) |
@@ -26,7 +26,7 @@
 
 
 | Feature subset   | armadillo 9.600 | eigen 3.3.7 | numpy 1.16.4 |
-| ---------------- | --------------- | ----------- | ------------ |
+|------------------|-----------------|-------------|--------------|
 | addition         | +               | +           | +            |
 | subtraction      | -               | -           | -            |
 | scalar multiply  | *               | *           | *            |
@@ -45,14 +45,14 @@
 ## Element Initialization / Array Generation 
 
 | Feature subset         | armadillo 9.600      | eigen 3.3.7 | numpy 1.16.4 |
-| ---------------------- | -------------------- | ----------- | ------------ |
+|------------------------|----------------------|-------------|--------------|
 | initialiser list       | vec v = { 1, 2, 3 }; |             |              |
 | return identity matrix | eye                  |             |              |
 
 ## Element Access and Views
 
 | Feature subset       | armadillo 9.600       | eigen 3.3.7 | numpy 1.16.4 |
-| -------------------- | --------------------- | ----------- | ------------ |
+|----------------------|-----------------------|-------------|--------------|
 | Access               | .at(i, j), (i,j), [i] |             |              |
 | Contiguous views     | .col, .cols, .submat  |             |              |
 | Non-Contiguous views | .elem, .cols, .submat |             |              |

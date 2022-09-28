@@ -5,7 +5,7 @@ TODO
 ## Member Functions operating on elements or groups of elements
 
 | Member Functions                          | armadillo 9.600            | eigen 3.3.7 | numpy 1.16.4 |
-| ----------------------------------------- | -------------------------- | ----------- | ------------ |
+|-------------------------------------------|----------------------------|-------------|--------------|
 | Set the elements of an object to zero     | .zeros()                   |             |              |
 | Set all the elements of an object to one  | .ones()                    |             |              |
 | Create unity matrix                       | .eye()                     |             |              |
