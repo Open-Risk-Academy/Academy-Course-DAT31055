@@ -7,6 +7,11 @@
 #include <armadillo>
 
 int main(int argc, const char **argv) {
+
+    // Get armadillo library version
+    std::cout << arma::arma_version::as_string() << std::endl;
+
+
     // Initialize the random generator
     arma::arma_rng::set_seed_random();
 

@@ -4,7 +4,7 @@ TODO
 
 ## Univariate Functions
 
-| Univariate Functions of Arrays          | armadillo 9.600            | eigen 3.3.7 | numpy 1.16.4 |
+| Univariate Functions of Arrays          | armadillo            | eigen | numpy |
 |-----------------------------------------|----------------------------|-------------|--------------|
 | obtain magnitude of each element        | abs(A)                     |             |              |
 | accumulate (sum) all elements           | accu(A)                    |             |              |
@@ -70,7 +70,7 @@ TODO
 
 ## Bivariate Functions
 
-| Bivariate Functions of Arrays           | armadillo 9.600                | eigen 3.3.7 | numpy 1.16.4 |
+| Bivariate Functions of Arrays           | armadillo                | eigen | numpy |
 |-----------------------------------------|--------------------------------|-------------|--------------|
 | affine matrix multiplication            | affmul(A,B)                    |             |              |
 | approximate equality                    | approx_equal(A,B)              |             |              |
