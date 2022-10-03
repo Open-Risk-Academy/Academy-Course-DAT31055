@@ -6,12 +6,20 @@
 #include <iostream>
 #include <armadillo>
 
+using namespace std;
+using namespace arma;
+
 int main(int argc, const char **argv) {
 
     // Get armadillo library version
-    std::cout << arma::arma_version::as_string() << std::endl;
+    cout << arma_version::as_string() << endl;
+    cout << "---------------------" << endl;
 
+    // Column Vector of type Double
+    Col<double> C = {1, 2, 3};
+    cout << "C:\t" << C << endl;
 
+    /*
     // Initialize the random generator
     arma::arma_rng::set_seed_random();
 
@@ -36,6 +44,7 @@ int main(int argc, const char **argv) {
     // Save matrices A and B:
     A.save("A_mat.txt", arma::arma_ascii);
     B.save("B_mat.txt", arma::arma_ascii);
+    */
 
     return 0;
 }
